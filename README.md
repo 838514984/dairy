@@ -18,5 +18,6 @@ public boolean dispatchTouchEvenr(MotionEvent event){<br>
 
 <br>自定义view点击事件，比如画一个圆，只接受圆内的点击事件，而不是接受全部Rect中的点击事件，可以用Region.setPath，Path与Regin的交集，然后可以在onTouchEvent中获取点击事件坐标，判断是不是在Region之间，region.contain.<br>
 ## 2017/4/25 17.25<br>
+今天学了pathMeasure，很实用。
 mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);<br>
-可以解决从底部弹出，被虚拟按键挡住。
+可以解决从底部弹出，被虚拟按键挡住。<br>
