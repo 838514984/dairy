@@ -25,6 +25,6 @@ mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZ
 （1）matrix 的ployToploy可以用来制作一些动图的特效，拉拽。<br>
 （2）在onmeasure中如果区别多个点的动作，可以判断收点击的坐标，和目标点击坐标进行判断，设置个临界值，相减如果小于临界值则进行下一步惭怍。<br>
 （3）NumberPicker.setDisplayedValues(new String[]{"天","周","年"});<br>
-     NumberPicker.setMinValue(0);<br>
-     NumberPicker.setMaxValue(2);<br>
-     可以显示任意单位<br>
+ 　　NumberPicker.setMinValue(0);<br>
+ 　　NumberPicker.setMaxValue(2);<br>
+   　可以显示任意单位<br>
