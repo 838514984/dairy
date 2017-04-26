@@ -18,6 +18,9 @@ public boolean dispatchTouchEvenr(MotionEvent event){<br>
 
 <br>自定义view点击事件，比如画一个圆，只接受圆内的点击事件，而不是接受全部Rect中的点击事件，可以用Region.setPath，Path与Regin的交集，然后可以在onTouchEvent中获取点击事件坐标，判断是不是在Region之间，region.contain.<br>
 ## 2017/4/25 17.25<br>
-今天学了pathMeasure，很实用。
+今天学了pathMeasure，很实用，可以用来画轨迹动图。
 mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);<br>
 可以解决从底部弹出，被虚拟按键挡住。<br>
+## 2017/4/26 15.46<br>
+（1）matrix 的ployToploy可以用来制作一些动图的特效，拉拽。<br>
+（2）在onmeasure中如果区别多个点的动作，可以判断收点击的坐标，和目标点击坐标进行判断，设置个临界值，相减如果小于临界值则进行下一步惭怍。<br>
