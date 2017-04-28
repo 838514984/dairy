@@ -28,3 +28,18 @@ mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZ
  　　NumberPicker.setMinValue(0);<br>
  　　NumberPicker.setMaxValue(2);<br>
    　可以显示任意单位<br>
+    
+## 2017/4/28 15.43<br>
+（1）转圈圈的自定义View可以用pathMeasure，不断截取，stop为length*duration，start=stop-从（0,1,0）乘以一个固定数。<br>
+(2) 今日重点！！！<br>
+　　matrix.postTranslate(100,100);<br>
+　　matrix.postScale(0.5f,0.5f);<br>
+　　matrix.postRotate(15);<br>
+　　matrix.postTranslate(-100,-100);<br>
+  等价于：<br>
+　　matrix.postScale(0.5f,0.5f);<br>
+　　matrix.postRotate(15);<br>
+　　matrix.preTranslate(100,100);<br>
+　　matrix.postTranslate(-100,-100);<br>
+  前程和后乘的区别。<br>
+
