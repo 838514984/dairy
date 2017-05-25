@@ -44,22 +44,22 @@ mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZ
   前程和后乘的区别。<br>
 
 ## 2017/05/24
-(1)GetTop getBottom getright getleft 都是获取相对父容器的、
- ![](https://github.com/838514984/dairy/blob/master/image/%E7%9B%B8%E5%AF%B9%E5%9D%90%E6%A0%87.png)
-(2)e.getX和e.getY的区别：
- ![](https://github.com/838514984/dairy/blob/master/image/%E7%94%9F%E5%9D%90%E6%A0%87.jpg)
-（3）安卓中的颜色
+(1)GetTop getBottom getright getleft 都是获取相对父容器的、<br>
+ ![](https://github.com/838514984/dairy/blob/master/image/%E7%9B%B8%E5%AF%B9%E5%9D%90%E6%A0%87.png)<br><br>
+(2)e.getX和e.getY的区别：<br>
+ ![](https://github.com/838514984/dairy/blob/master/image/%E7%94%9F%E5%9D%90%E6%A0%87.jpg)<br>
+（3）安卓中的颜色<br>
  
-(4) Websocket.
-在websocket的世界中总共有4种事件—— onopen、onclose、onmessage和onerror
+(4) Websocket.<br>
+在websocket的世界中总共有4种事件—— onopen、onclose、onmessage和onerror<br>
 
-    【onopen】websocket建立连接完成
+    【onopen】websocket建立连接完成<br>
 
-    【onclose】websocket连接被关闭或无法建立连接
+    【onclose】websocket连接被关闭或无法建立连接<br>
 
-    【onmessage】websocket收到数据，发送数据对应socket.send方法
+    【onmessage】websocket收到数据，发送数据对应socket.send方法<br>
 
-【onerror】websocket发生错误
+【onerror】websocket发生错误<br>
 
 2017/05/25
 （1）	使用Zxing解析生成二维码，并生成bitmap，可以给ImageView使用。<br>
