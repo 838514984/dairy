@@ -45,9 +45,9 @@ mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZ
 
 ## 2017/05/24
 (1)GetTop getBottom getright getleft 都是获取相对父容器的、
- 
+ ![](https://github.com/838514984/dairy/blob/master/image/%E7%9B%B8%E5%AF%B9%E5%9D%90%E6%A0%87.png)
 (2)e.getX和e.getY的区别：
- 
+ ![](https://github.com/838514984/dairy/blob/master/image/%E7%94%9F%E5%9D%90%E6%A0%87.jpg)
 （3）安卓中的颜色
  
 (4) Websocket.
