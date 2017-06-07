@@ -44,24 +44,24 @@ mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZ
   前程和后乘的区别。<br>
 
 ## 2017/05/24
-(1)GetTop getBottom getright getleft 都是获取相对父容器的、
+(1)GetTop getBottom getright getleft 都是获取相对父容器的、<br>
+ ![](https://github.com/838514984/dairy/blob/master/image/%E7%9B%B8%E5%AF%B9%E5%9D%90%E6%A0%87.png)<br><br>
+(2)e.getX和e.getY的区别：<br>
+ ![](https://github.com/838514984/dairy/blob/master/image/%E7%94%9F%E5%9D%90%E6%A0%87.jpg)<br>
+（3）安卓中的颜色<br>
  
-(2)e.getX和e.getY的区别：
- 
-（3）安卓中的颜色
- 
-(4) Websocket.
-在websocket的世界中总共有4种事件—— onopen、onclose、onmessage和onerror
+(4) Websocket.<br>
+在websocket的世界中总共有4种事件—— onopen、onclose、onmessage和onerror<br>
 
-    【onopen】websocket建立连接完成
+    【onopen】websocket建立连接完成<br>
 
-    【onclose】websocket连接被关闭或无法建立连接
+    【onclose】websocket连接被关闭或无法建立连接<br>
 
-    【onmessage】websocket收到数据，发送数据对应socket.send方法
+    【onmessage】websocket收到数据，发送数据对应socket.send方法<br>
 
-【onerror】websocket发生错误
+【onerror】websocket发生错误<br>
 
-2017/05/25
+## 2017/05/25
 （1）	使用Zxing解析生成二维码，并生成bitmap，可以给ImageView使用。<br>
     public static Bitmap Create2DCode(String text) throws WriterException {    <br>
         //生成二维矩阵,编码时指定大小,不要生成了图片以后再进行缩放,这样会模糊导致识别失败    <br>
@@ -89,3 +89,17 @@ mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZ
 　　　　bitmap.setPixels(pixels, 0, width, 0, 0, width, height);    <br>
 　　　　return bitmap;    　<br>
 　　　}  　<br>
+
+## 2017/06/01
+
+(1) 事件收集之后最先传递给 Activity， 然后依次向下传递，大致如下：<br>
+Activity －> PhoneWindow －> DecorView －> ViewGroup －> ... －> View<br>
+(2)	ExpandListView<br>
+## 2017/06/07
+(1) Matrix matrix = new Matrix();<br>
+// 各种操作，旋转，缩放，错切等，可以执行多次。<br>
+matrix.postTranslate(pivotX,pivotY);<br>
+matrix.preTranslate(-pivotX, -pivotY);<br>
+
+
+
