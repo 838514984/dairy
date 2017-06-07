@@ -100,6 +100,7 @@ Activity －> PhoneWindow －> DecorView －> ViewGroup －> ... －> View<br>
 // 各种操作，旋转，缩放，错切等，可以执行多次。<br>
 matrix.postTranslate(pivotX,pivotY);<br>
 matrix.preTranslate(-pivotX, -pivotY);<br>
-
+（2）触摸点坐标和画布坐标转换。<br>
+![](https://github.com/838514984/dairy/blob/master/image/QQ%E6%88%AA%E5%9B%BE20170607175139.png)
 
 
