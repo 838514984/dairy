@@ -61,7 +61,7 @@ mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZ
 
 【onerror】websocket发生错误<br>
 
-2017/05/25
+## 2017/05/25
 （1）	使用Zxing解析生成二维码，并生成bitmap，可以给ImageView使用。<br>
     public static Bitmap Create2DCode(String text) throws WriterException {    <br>
         //生成二维矩阵,编码时指定大小,不要生成了图片以后再进行缩放,这样会模糊导致识别失败    <br>
@@ -89,3 +89,17 @@ mPopupWindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZ
 　　　　bitmap.setPixels(pixels, 0, width, 0, 0, width, height);    <br>
 　　　　return bitmap;    　<br>
 　　　}  　<br>
+
+## 2017/06/01
+
+(1) 事件收集之后最先传递给 Activity， 然后依次向下传递，大致如下：<br>
+Activity －> PhoneWindow －> DecorView －> ViewGroup －> ... －> View<br>
+(2)	ExpandListView<br>
+## 2017/06/07
+(1) Matrix matrix = new Matrix();<br>
+// 各种操作，旋转，缩放，错切等，可以执行多次。<br>
+matrix.postTranslate(pivotX,pivotY);<br>
+matrix.preTranslate(-pivotX, -pivotY);<br>
+
+
+
