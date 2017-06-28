@@ -104,3 +104,12 @@ matrix.preTranslate(-pivotX, -pivotY);<br>
 ![](https://github.com/838514984/dairy/blob/master/image/QQ%E6%88%AA%E5%9B%BE20170607175139.png)
 
 
+## 2017/06/14
+ViewGragHelper中如果子view可点击的，需要重写getViewHorizontalDragRange和getViewVerticalDragRange返回的值大于0，才能拖动。<br>
+##2017/06/28
+将moudle做成其他moudle的依赖，open module seetings，中添加moudle依赖。<br>
+然后在moudle依赖的gradle中修改一下配置。<br>
+apply plugin:’com.android.application’<br>
+改为：<br>
+apply plugin: 'com.android.library'<br>
+并且去掉ApplicationId.<br>
