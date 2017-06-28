@@ -117,3 +117,8 @@ apply plugin: 'com.android.library'<br>
 当FirstActivity启动SecondActivity（singleinstance），在启动到firstActivity，此时FirstActivity又会到原来的栈中，此时若按下返回键，退回的界面不是Seconedactivity，而是FirstActivity！！<br>
 最后一个界面才是Seconedactivity。<br>
 ![](https://github.com/838514984/dairy/blob/master/image/singleinstance.png)<br>
+<br>缩小Apk体积<br>
+1.在发行版构建配置（release）中添加minifyEnabled属性为true，启用proguard。<br>
+2.在发行版构建配置（release）中，启用shrinkResources，删除不使用的文件。<br>
+3.通过在“resConfigs”中自定义设置所需要的语言配置资源。<br>
+4.将所有图像转换为webp或vector drawables（矢量图）。<br>
