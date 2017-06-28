@@ -106,10 +106,14 @@ matrix.preTranslate(-pivotX, -pivotY);<br>
 
 ## 2017/06/14
 ViewGragHelper中如果子view可点击的，需要重写getViewHorizontalDragRange和getViewVerticalDragRange返回的值大于0，才能拖动。<br>
-##2017/06/28
+## 2017/06/28
 将moudle做成其他moudle的依赖，open module seetings，中添加moudle依赖。<br>
 然后在moudle依赖的gradle中修改一下配置。<br>
 apply plugin:’com.android.application’<br>
 改为：<br>
 apply plugin: 'com.android.library'<br>
 并且去掉ApplicationId.<br>
+<br>singleInstance启动模式！！！<br>
+当FirstActivity启动SecondActivity（singleinstance），在启动到firstActivity，此时FirstActivity又会到原来的栈中，此时若按下返回键，退回的界面不是Seconedactivity，而是FirstActivity！！<br>
+最后一个界面才是Seconedactivity。<br>
+![](https://github.com/838514984/dairy/blob/master/image/singleinstance.png)<br>
