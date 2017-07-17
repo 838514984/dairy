@@ -122,3 +122,17 @@ apply plugin: 'com.android.library'<br>
 2.在发行版构建配置（release）中，启用shrinkResources，删除不使用的文件。<br>
 3.通过在“resConfigs”中自定义设置所需要的语言配置资源。<br>
 4.将所有图像转换为webp或vector drawables（矢量图）。<br>
+
+
+## 2017/7/12
+AnimationDrawable<br>
+1.	ImageView rocketImage = (ImageView) findViewById(R.id.rocket_image);  <br>
+2.	rocketImage.setBackgroundResource(R.drawable.rocket_thrust); //roket_trust为定义的XML文件 <br> 
+3.	rocketAnimation = (AnimationDrawable) rocketImage.getBackground();  <br>
+然后可以start(),stop()<br>
+
+## 2017/7/17
+clipToPadding	flase,可以设置一个控件内容是否显示在padding距离中<br>
+例如： <br>
+　　Listview设置了PaddingTop100dp，那刚开始的第一个item是距离顶部100dp的，然后设置clipToPadding为false。那么向上滑的时候，item会填充到padding的区域中，如果为true，那么还是距离paddingtop100dp
+
