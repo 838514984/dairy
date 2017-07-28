@@ -136,3 +136,7 @@ clipToPadding	flase,可以设置一个控件内容是否显示在padding距离�
 例如： <br>
 　　Listview设置了PaddingTop100dp，那刚开始的第一个item是距离顶部100dp的，然后设置clipToPadding为false。那么向上滑的时候，item会填充到padding的区域中，如果为true，那么还是距离paddingtop100dp
 
+## 2017/7/28
+我了个大草，大坑<Br>
+用RelativeLayout，当子view设置centerinparent true的时候，relativelayout设置paddingTOp是无效的！！！！！ 还是居中，只不过是平均吧padding分散到了top和bottom。<Br>
+这个是用statusBarUtil，setPaddingSmart中发现，纠结了两天，后来换了framelayout就没问题了。坑
