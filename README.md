@@ -140,3 +140,9 @@ clipToPadding	flase,可以设置一个控件内容是否显示在padding距离�
 我了个大草，大坑<Br>
 用RelativeLayout，当子view设置centerinparent true的时候，relativelayout设置paddingTOp是无效的！！！！！ 还是居中，只不过是平均吧padding分散到了top和bottom。<Br>
 这个是用statusBarUtil，setPaddingSmart中发现，纠结了两天，后来换了framelayout就没问题了。坑
+  
+## 2017/8/1
+又一个坑爹货！！！！！<br>
+Camera预览的时候，黑屏<br>
+在调用camera preview的时候延迟它个一点延迟就解决了，又TM是个大坑。<br>
+
