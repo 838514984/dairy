@@ -151,7 +151,7 @@ Android studio module依赖问题<br>
 工程依赖是可以传递的，aar依赖是不能传递的<br>
 比如ProjectA是主工程，moudleA是lib，moudleB是lib。还是看图吧<br>
 
-!()[https://github.com/838514984/dairy/blob/master/image/depend.png]<br>
+![](https://github.com/838514984/dairy/blob/master/image/depend.png)<br>
 还有，在加入只有一个工程，那在主工程添加aar依赖，在根节点添加<br>
 Reporsitorise{<br>
 　　flatDir{<br>
