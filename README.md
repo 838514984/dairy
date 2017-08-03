@@ -146,3 +146,27 @@ clipToPadding	flase,可以设置一个控件内容是否显示在padding距离�
 Camera预览的时候，黑屏<br>
 在调用camera preview的时候延迟它个一点延迟就解决了，又TM是个大坑。<br>
 
+## 2017/8/3
+Android studio module依赖问题<br>
+工程依赖是可以传递的，aar依赖是不能传递的<br>
+比如ProjectA是主工程，moudleA是lib，moudleB是lib。还是看图吧<br>
+
+!()[https://github.com/838514984/dairy/blob/master/image/depend.png]<br>
+还有，在加入只有一个工程，那在主工程添加aar依赖，在根节点添加<br>
+Reporsitorise{<br>
+　　flatDir{<br>
+　　　　dirs ‘libs’<br>　
+　　}<br>
+}<br>
+就行了<br>
+但是比如主工程依赖了一个子工程<br>
+那么就需要变化<br>
+Reporsitorise{<br>
+　　flatDir{<br>
+　　　　dirs ‘libs’,’../your projectname/libs’<br>
+　　}<br>
+}<br>
+
+那么主工程也可以compile在主工程没有但在子工程有的aar包。<br>
+Compilt(name:’xxx’,ext:’aar’)<br>
+
