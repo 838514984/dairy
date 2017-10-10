@@ -170,3 +170,10 @@ Reporsitorise{<br>
 那么主工程也可以compile在主工程没有但在子工程有的aar包。<br>
 Compilt(name:’xxx’,ext:’aar’)<br>
 
+## 2017/8/1
+![](https://github.com/838514984/dairy/blob/master/image/%E5%A0%86%E5%92%8C%E6%A0%88.png)<br>
+自定义编译类型：<br>
+![](https://github.com/838514984/dairy/blob/master/image/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BC%96%E8%AF%91%E7%B1%BB%E5%9E%8B.png)
+然后在dependence中：<br>
+myrayCompile 'com.jakewharton:butterknife:8.8.0'      //注意这里是只有选择myray的productFlavor才会用这个依赖<br>
+
